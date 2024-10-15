@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Experience</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Analyst / Full Stack Developer</p>
+            <h1>Hi, I'm <span>Pavithra MR</span> <br>From Bengaluru, Karnataka</h1>
+        </div>
+    </div>
+</div>
+<!------------------------about----------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I’m a passionate Data Analyst and Full Stack Developer skilled in tools like Python, SQL, Power BI, and Tableau for data insights, alongside HTML, CSS, and React for web development. With experience in creating interactive dashboards and web solutions, I aim to leverage my analytical and development skills to solve real-world problems and drive business growth</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Analytics & Visualization</span><br>Python, SQL, Excel, Power BI, Tableau</li>
+                        <li><span>Web Development</span><br>HTML, CSS, JavaScript, React, PHP, SQL Databases, Git, Bootstrap, Responsive Design</li>
+                        <li><span>Project & Problem-Solving Skills</span><br>Data Cleaning & Processing,  Dashboard Creation, IoT Development (Arduino, Embedded C), Team Collaboration (Agile, GitHub)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience"> 
+                    <ul>
+                        <li><span>Data Analytics</span><br>Data Analytics Training at Centum Foundation by Accenture (March 2024 – May 2024): Completed a course in Python, Excel, SQL, Power BI, and Tableau. Worked on projects like HR Analytics Dashboards and Superstore Sales Forecasting, gaining hands-on experience in data cleaning and visualization.</li>
+                        <li><span>Web Development</span><br>Web Development Internship at Internshala (March 2023 – May 2023): Developed full-stack web applications using HTML, CSS, JavaScript, React, and PHP. Created the PG Life Management System with a focus on responsive design.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Bachelor of Engineering (CSE), East West Institute of Technology</li>
+                        <li><span>2020</span><br>Pre-University Course (PCMB), BGS PU College</li>
+                        <li><span>2018</span><br>Secondary Schooling (ICSE), Vasavi Vidya Peeta</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------services--------------------->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Data Analytics</h2>
+                <p>Completed comprehensive training in data analytics, gaining proficiency in Python, Excel, SQL, Power BI, and Tableau. Worked on projects like HR Analytics Dashboards and Superstore Sales Forecasting, focusing on data cleaning, analysis, and visualization to provide actionable insights.</p>
+                <details>
+                    <summary class="learn-more">Learn more</summary>
+                    <div class="more-info">
+                        <p>During my training, I worked on various projects, including:</p>
+                        <ul>
+                            <li>HR Analytics Dashboard - Analyzed employee data to identify attrition trends.</li>
+                            <li>Superstore Sales Forecasting - Utilized time series analysis for sales predictions.</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Development</h2>
+                <p>Interned as a Web Developer, where I developed full-stack web applications using HTML, CSS, JavaScript, React, and PHP. Designed and implemented the PG Life Management System, emphasizing responsive design and user-friendly interfaces while collaborating with team members to deliver projects effectively.</p>
+                <details>
+                    <summary class="learn-more">Learn more</summary>
+                    <div class="more-info">
+                        <p>Key projects included:</p>
+                        <ul>
+                            <li>PG Life Management System - A web application to help users manage their PG life efficiently.</li>
+                            <li>Responsive Web Design - Ensured mobile and desktop compatibility.</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>IoT Development</h2>
+                <p>Completed an internship in IoT Development, focusing on hardware integration and programming. Developed a Bluetooth-controlled LED using Embedded C and Arduino, gaining hands-on experience in IoT technologies and enhancing problem-solving skills in innovative projects.</p>
+                <details>
+                    <summary class="learn-more">Learn more</summary>
+                    <div class="more-info">
+                        <p>Projects and skills developed included:</p>
+                        <ul>
+                            <li>Bluetooth-controlled LED - Implemented using Arduino and Embedded C.</li>
+                            <li>Hardware Integration - Gained experience with various IoT devices and protocols.</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------portfolio-------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>HR Analytics Dashboard</h3>
+                    <p>Developed an interactive dashboard using Tableau to visualize key HR metrics, including attrition rates and employee demographics.</p>
+                    <a href="https://github.com/pavithraraj22/HR-Analytics-Dashboard-in-Tableau" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Superstore Sales Forecasting</h3>
+                    <p>Created a sales forecasting model using Power BI, employing time series analysis to provide actionable insights for business growth.</p>
+                    <a href="https://github.com/pavithraraj22/Super-Store-Sales-Dashboard" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>PG Life Management System</h3>
+                    <p>Built a web application using React and PHP to help students manage their daily tasks, focusing on responsive design and user experience.</p>
+                    <a href="https://github.com/pavithraraj22/PG-Life-Management" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Projects Section -->
+        <div id="extra-projects" class="work-list" style="display: none;">
+            <div class="work">
+                <img src="work-4.png">
+                <div class="layer">
+                    <h3>Tic Tac Toe</h3>
+                    <p>Developed a Tic Tac Toe game using HTML, CSS, and JavaScript with features like sound effects and an animated win screen.</p>
+                    <a href="https://github.com/pavithraraj22/Tic-Tac-Toe" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-5.png">
+                <div class="layer">
+                    <h3>Road Accident Dashboard</h3>
+                    <p>Created a dynamic dashboard in Excel to analyze road accidents by severity, time, and location, offering insights into traffic safety.</p>
+                    <a href="https://github.com/pavithraraj22/Road-Accident-Dashboard" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn" onclick="document.getElementById('extra-projects').style.display = 'grid'; this.style.display = 'none';">See more</a>
+    </div>
+</div>
+
+
+
+
+<!----------------------contact------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rajpavithra92@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>6361459270</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/pavithraraj22/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/pavithraraj22"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-left">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Pavithra. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+    }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemen = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemen.style.right="0";
+    }
+    function closemenu(){
+        sidemen.style.right="-200px";
+    }
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzq-QfHg1ZNuDdz_cNe0C4U6GehICFFFvivw9NIY7eqxYTtuKjCWgB-lC5rb4Mry6v_EQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    
+</body>
+</html>
